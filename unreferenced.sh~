@@ -1,0 +1,22 @@
+# find . -type d -print
+
+
+# echo "Lines following this are all subdirectories and their contents:"
+# ls -aR
+
+
+fileList=$(find ./sample | grep -E ".+(txt|json|xml)")
+echo $fileList
+# imageFilelist=$(find ./sample | grep -E ".+(jpg|png|gif|jpeg)")
+# imageList+="$res ";
+
+# for item in $imageFilelist; echo $item
+
+
+# echo "Lines following this are all files containing image types and their paths:"
+# egrep -rwE "(jpg|png|gif)" .
+
+
+# find . -type f \*.txt -print
+# \*.cpp \*.py \*.c \*.html \*.xml \*.json
+# find . -type f -exec ls -l {} \; 2> /dev/null | sort | less
